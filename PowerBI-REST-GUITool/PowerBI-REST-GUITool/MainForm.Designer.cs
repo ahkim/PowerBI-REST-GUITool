@@ -31,7 +31,6 @@
             this.tbPayload = new System.Windows.Forms.TextBox();
             this.tbClientID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnPUT = new System.Windows.Forms.Button();
             this.btnPOST = new System.Windows.Forms.Button();
             this.btnGETDatasets = new System.Windows.Forms.Button();
             this.btnGetTables = new System.Windows.Forms.Button();
@@ -58,23 +57,13 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(56, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "ClientID";
             // 
-            // btnPUT
-            // 
-            this.btnPUT.Location = new System.Drawing.Point(381, 7);
-            this.btnPUT.Name = "btnPUT";
-            this.btnPUT.Size = new System.Drawing.Size(75, 23);
-            this.btnPUT.TabIndex = 4;
-            this.btnPUT.Text = "PUT";
-            this.btnPUT.UseVisualStyleBackColor = true;
-            this.btnPUT.Click += new System.EventHandler(this.btnPUT_Click);
-            // 
             // btnPOST
             // 
-            this.btnPOST.Location = new System.Drawing.Point(462, 7);
+            this.btnPOST.Location = new System.Drawing.Point(385, 7);
             this.btnPOST.Name = "btnPOST";
             this.btnPOST.Size = new System.Drawing.Size(75, 23);
             this.btnPOST.TabIndex = 5;
@@ -84,7 +73,7 @@
             // 
             // btnGETDatasets
             // 
-            this.btnGETDatasets.Location = new System.Drawing.Point(543, 7);
+            this.btnGETDatasets.Location = new System.Drawing.Point(466, 7);
             this.btnGETDatasets.Name = "btnGETDatasets";
             this.btnGETDatasets.Size = new System.Drawing.Size(92, 23);
             this.btnGETDatasets.TabIndex = 6;
@@ -94,7 +83,7 @@
             // 
             // btnGetTables
             // 
-            this.btnGetTables.Location = new System.Drawing.Point(641, 7);
+            this.btnGetTables.Location = new System.Drawing.Point(564, 7);
             this.btnGetTables.Name = "btnGetTables";
             this.btnGetTables.Size = new System.Drawing.Size(92, 23);
             this.btnGetTables.TabIndex = 7;
@@ -110,7 +99,6 @@
             this.Controls.Add(this.btnGetTables);
             this.Controls.Add(this.btnGETDatasets);
             this.Controls.Add(this.btnPOST);
-            this.Controls.Add(this.btnPUT);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbClientID);
             this.Controls.Add(this.tbPayload);
@@ -126,7 +114,6 @@
         private System.Windows.Forms.TextBox tbPayload;
         private System.Windows.Forms.TextBox tbClientID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnPUT;
         private System.Windows.Forms.Button btnPOST;
         private System.Windows.Forms.Button btnGETDatasets;
         private System.Windows.Forms.Button btnGetTables;

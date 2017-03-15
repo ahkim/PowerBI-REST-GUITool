@@ -41,18 +41,6 @@ namespace PowerBI_REST_GUITool
             InitializeComponent();
         }
 
-        private void btnPUT_Click(object sender, EventArgs e)
-        {
-            if (clientID == string.Empty)
-            {
-                clientID = tbClientID.Text;
-                tbClientID.Enabled = false;
-            }
-                
-            // PUT
-            tbPayload.Text = UpdateDataset(tbPayload.Text);
-        }
-
         private void btnPOST_Click(object sender, EventArgs e)
         {
             if (clientID == string.Empty)
@@ -110,20 +98,6 @@ namespace PowerBI_REST_GUITool
             //In a production application, use more specific exception handling.           
             //Create a POST web request
             HttpWebRequest request = DatasetRequest(String.Format("{0}/datasets?defaultRetentionPolicy=basicFIFO", datasetsUri), "POST", AccessToken());
-
-            //POST request using the json schema from Product
-            return PostRequest(request, jsonText);
-        }
-
-        //The Create Dataset operation creates a new Dataset from a JSON schema definition and returns the Dataset ID 
-        //and the properties of the dataset created.
-        //POST https://api.powerbi.com/v1.0/myorg/datasets
-        //Create Dataset operation: https://msdn.microsoft.com/en-US/library/mt203562(Azure.100).aspx
-        static string UpdateDataset(string jsonText)
-        {
-            //In a production application, use more specific exception handling.           
-            //Create a POST web request
-            HttpWebRequest request = DatasetRequest(String.Format("{0}/datasets", datasetsUri), "PUT", AccessToken());
 
             //POST request using the json schema from Product
             return PostRequest(request, jsonText);
